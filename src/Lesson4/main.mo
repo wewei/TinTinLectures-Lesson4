@@ -26,8 +26,6 @@ actor {
   stable var messages: List<Message> = List.nil();
 
   public shared({ caller }) func claimOwner(): async () {
-    assert(owner == null or owner == ?caller);
-
     owner := ?caller;
   };
 
