@@ -4,17 +4,16 @@
       "main": "src/Lesson4/main.mo",
       "type": "motoko"
     },
+    "Lesson4_copy": {
+      "main": "src/Lesson4/main.mo",
+      "type": "motoko"
+    },
     "Lesson4_assets": {
-      "dependencies": [
-        "Lesson4"
-      ],
+      "dependencies": ["Lesson4"],
       "frontend": {
         "entrypoint": "src/Lesson4_assets/src/index.html"
       },
-      "source": [
-        "src/Lesson4_assets/assets",
-        "dist/Lesson4_assets/"
-      ],
+      "source": ["src/Lesson4_assets/assets", "dist/Lesson4_assets/"],
       "type": "assets"
     }
   },

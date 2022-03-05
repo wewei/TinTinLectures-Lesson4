@@ -1,0 +1,14 @@
+type Time = int;
+type Message = 
+ record {
+   content: text;
+   time: Time;
+ };
+service : {
+  claimOwner: () -> ();
+  follow: (principal) -> ();
+  follows: () -> (vec principal) query;
+  post: (text) -> ();
+  posts: (Time) -> (vec Message) query;
+  timeline: (Time) -> (vec Message);
+}

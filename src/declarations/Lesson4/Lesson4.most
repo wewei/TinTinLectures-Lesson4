@@ -1,0 +1,7 @@
+type List<T> = ?(T, List<T>);
+type Message = {content : Text; time : Time/1};
+actor {
+  stable var followees : ?(Principal, List<Principal>);
+  stable var messages : ?(Message, List<Message>);
+  stable var owner : ?Principal
+};
